@@ -14,23 +14,23 @@ Copy this structure for each song. Fill in your lyrics and adjust the performanc
 ```
 [Intro: describe energy and instrumentation]
 
-[Verse 1: describe dynamics — e.g., stripped back, acoustic only]
+[Verse 1: describe dynamics - e.g., stripped back, acoustic only]
 Line 1 (6-10 syllables)
 Line 2
 Line 3
 Line 4
 
-[Pre-Chorus: describe transition — e.g., building, add bass]
+[Pre-Chorus: describe transition - e.g., building, add bass]
 Line 1
 Line 2
 
-[Chorus: describe peak energy — e.g., full band, anthemic, layered vocals]
+[Chorus: describe peak energy - e.g., full band, anthemic, layered vocals]
 Hook line 1
 Hook line 2
 Hook line 3
 Hook line 4
 
-[Verse 2: describe how it differs from Verse 1 — e.g., slightly fuller, add pedal steel]
+[Verse 2: describe how it differs from Verse 1 - e.g., slightly fuller, add pedal steel]
 Line 1
 Line 2
 Line 3
@@ -46,19 +46,19 @@ Hook line 2
 Hook line 3
 Hook line 4
 
-[Bridge: describe contrast — e.g., half-time, stripped, shift in perspective]
+[Bridge: describe contrast - e.g., half-time, stripped, shift in perspective]
 Line 1
 Line 2
 Line 3
 Line 4
 
-[Chorus: biggest version — e.g., full band, harmonies, energy lift]
+[Chorus: biggest version - e.g., full band, harmonies, energy lift]
 Hook line 1
 Hook line 2
 Hook line 3
 Hook line 4
 
-[Outro: describe resolution — e.g., fade, minimal instrumentation]
+[Outro: describe resolution - e.g., fade, minimal instrumentation]
 Final line or instrumental direction
 ```
 
