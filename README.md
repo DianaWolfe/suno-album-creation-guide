@@ -38,11 +38,11 @@ Southern Oracle - an AI-generated outlaw country band - was built using this exa
 
 | Tool | Purpose | Cost |
 |------|---------|------|
-| **Suno** (Pro or Premier) | AI music generation | $10–30/month |
+| **Suno** (Pro or Premier) | AI music generation | $10-30/month |
 | **DistroKid** or similar | Distribution to streaming platforms | ~$22.99/year |
-| **Midjourney / DALL-E / Leonardo AI** | Album art and visual identity | $10–30/month |
+| **Nano Banana / Midjourney / Flux** | Album art and visual identity | Free-$30/month |
 | **ChatGPT / Claude** | Songwriting partner, persona development, project management | $20/month (optional) |
-| **DAW** (optional) | Mixing and mastering (GarageBand is free) | Free–$200 |
+| **DAW** (optional) | Mixing and mastering (GarageBand is free) | Free-$200 |
 
 ### Skills (No Prior Experience Required)
 
@@ -194,6 +194,18 @@ You can use ChatGPT, Claude, or any LLM as a co-writer. Effective approaches:
 
 Do not ask the AI to write the whole song. Bring your vision. Use the AI to refine execution.
 
+### Dedicated Songwriting Tools
+
+Beyond general-purpose LLMs, several tools are built specifically for songwriting:
+
+- **LyricStudio** - AI co-writing tool that suggests lines, rhymes, and themes while you steer structure. Designed for musicians composing melodies elsewhere.
+- **Songwriter's Pad** - Lyric-focused app with built-in rhyme finding, syllable counting, and word suggestions.
+- **FRESHBOTS** - AI fine-tuned for songwriting that understands genre conventions and song structure. Aims to produce lyrics that sound like music rather than chatbot output.
+- **AudioCipher** - Converts text into MIDI melodies, bridging lyric writing and music composition.
+- **RhymeZone** - Not AI-powered but essential. Best tool for finding perfect rhymes, near-rhymes, and synonyms.
+
+These tools are supplementary. An LLM (Claude or ChatGPT) with a well-crafted prompt remains the most flexible songwriting partner for most creators.
+
 ### Songwriting Learning Resources
 
 **YouTube channels for songwriting craft:**
@@ -259,15 +271,39 @@ These three conditions - co-evolution, boundary setting, complementarity - are n
 
 ## 5. Phase 4: Music Production with Suno
 
-### How Suno Works
+### How Suno Works (V5)
 
-Suno has two input fields that matter.
+Suno is currently on **V5** (released September 2025), with significant upgrades over earlier versions. If you used Suno in 2024, the tool has changed substantially.
 
-**Style Prompt** (the "Style of Music" field): Your sonic blueprint. It defines genre, instrumentation, vocal character, tempo feel, and production aesthetic. Think of it as the brief you would give a producer.
+**Two input fields matter:**
+
+**Style Prompt** (the "Style of Music" field): Your sonic blueprint. It defines genre, instrumentation, vocal character, tempo feel, and production aesthetic. Think of it as the brief you would give a producer. V5 now supports **negative prompting** - you can specify what you do not want (e.g., "no autotune, no electronic elements").
 
 **Custom Lyrics** (the lyrics field): Where your lyrics go, along with structural tags in brackets that tell Suno how to arrange the song.
 
 These two inputs are independent. The style prompt sets the sonic world. The lyrics and tags set the structure and performance arc.
+
+### Key V5 Features for Album Production
+
+**Personas.** Save a voice from any generated track and reuse that exact vocal model across future songs. This is the single most important feature for album cohesion. Once you find the voice, lock it in as a Persona and use it for every track.
+
+**Suno Studio.** A browser-based DAW-like environment with multi-track timeline editing. Available on Pro and Premier plans. Includes visual arranging, layering, BPM/volume/pitch controls. This is where you assemble and refine, not just generate.
+
+**Generative Stems.** V5 can split output into up to 12 individual tracks (drums, bass, vocals, guitars, etc.). You can regenerate individual stems - swap a guitar for a string section, change a drum pattern - while keeping everything else intact. This is closer to working with session musicians than pressing a button.
+
+**Replace Section.** Audio in-painting. If Suno garbles a lyric in verse 2 but the rest of the song is perfect, you can regenerate just that section without losing the surrounding audio.
+
+**Covers.** Style transfer. Extract the melody and lyrics from an existing track and re-render in a different genre. Useful for exploring how a song feels in different sonic neighborhoods before committing.
+
+### Suno Pricing
+
+| Plan | Monthly | Annual (per month) | Credits | Key Features |
+|------|---------|-------------------|---------|--------------|
+| Free | $0 | $0 | 50/day | Non-commercial, no V5 |
+| Pro | ~$10 | ~$8 | 2,500/month | Commercial rights, V5, Personas, Stems |
+| Premier | ~$30 | ~$24 | 10,000/month | Full Studio, all features, priority generation |
+
+For album production, Premier is worth it. 10,000 credits is roughly 2,000 songs, which gives you ample room to iterate. Pro works if you are patient and selective about what you generate.
 
 ### The Style Prompt: Four Components
 
@@ -299,7 +335,7 @@ Examples:
 - `fingerpicked acoustic, no drums, cello`
 - `synth pads, drum machine, bass guitar, no acoustic instruments`
 
-You can specify exclusions: `no synths, no electronic elements`
+V5's negative prompting makes exclusions more reliable: `no synths, no electronic elements`
 
 #### 3. Vocal Character
 
@@ -312,7 +348,7 @@ Examples:
 - `duet, female lead with male harmony`
 - `spoken word intro, female vocal`
 
-For album consistency, reuse the same vocal descriptors across every track.
+For album consistency, find the right voice early and save it as a **Persona**. This locks the vocal timbre across every track, which is far more reliable than repeating descriptors and hoping for consistency.
 
 #### 4. Production and Mood
 
@@ -409,8 +445,10 @@ Turn the cards, lay them down
 **Step 4: Iterate.** The first generation is almost never the final version.
 - Vary the style prompt slightly (swap one genre descriptor, adjust production aesthetic)
 - Adjust structural tags (if the chorus does not lift enough, add performance cues)
-- Regenerate sections (use Suno's editor for individual sections)
+- Use **Replace Section** to fix specific problem spots without regenerating the whole song
+- Use **Generative Stems** to swap individual instruments or vocal layers
 - Extend or crop (add a bridge, trim a long outro)
+- Open the track in **Suno Studio** for timeline-level editing, layering, and arrangement
 
 Treat each generation as a draft. The negotiation between your intent and what Suno produces is the creative process.
 
@@ -418,8 +456,8 @@ Treat each generation as a draft. The negotiation between your intent and what S
 
 ### Building Album Cohesion
 
-- **Consistent vocal identity.** Same core vocal descriptors across every track. Vary delivery, keep the fundamental voice consistent.
-- **Sonic palette constraints.** Core instruments plus 1–2 guests per song.
+- **Lock your voice with Personas.** Once you find the right vocal, save it as a Persona. This is the most reliable way to maintain vocal identity across an album. You can still vary delivery and energy through style prompts and structural tags while keeping the fundamental voice consistent.
+- **Sonic palette constraints.** Core instruments plus 1-2 guests per song.
 - **Style prompt template.** Create a base and vary it per track.
 
 Example base template:
@@ -433,15 +471,14 @@ Per track:
 - Track 2: `honky-tonk` / `electric guitar, piano, full drums` / `defiant` / `energetic, raw`
 - Track 3: `slowcore` / `fingerpicked acoustic, cello, no drums` / `breathy, intimate` / `sparse`
 
-### What Suno Cannot Do
+### What Suno Cannot Do (Even in V5)
 
 Be honest about the boundaries:
-- **No note-level control.** You cannot specify melodies or chord progressions.
-- **Vocal timbre is approximate.** Consistency improves with consistent prompts but is never guaranteed.
-- **Long-form structure is unreliable.** Songs over 3–4 minutes lose coherence. Build in sections.
-- **Genre fusion is unpredictable.** More than 3 genre descriptors may cause the model to default to one.
-- **Lyrics can be garbled.** Complex multisyllabic words get swallowed. Simplify choruses and hooks.
-- **Mixing is basic.** Export stems and finish in a DAW for release quality.
+- **No note-level control.** You cannot specify melodies or chord progressions. You direct, you do not compose in the traditional sense.
+- **Vocal timbre varies.** Personas dramatically improved consistency, but no two generations are identical. Expect to iterate.
+- **Genre fusion is unpredictable.** More than 3 genre descriptors may cause the model to default to one. Keep your genre stack focused.
+- **Lyrics can be garbled.** Complex multisyllabic words get swallowed, especially in choruses. Simplify hooks. Use Replace Section to fix problem spots.
+- **Mixing is serviceable but not professional.** Generative Stems give you more control than before, but export to a DAW for release quality if you want radio-competitive sound.
 
 ---
 
@@ -451,11 +488,16 @@ Be honest about the boundaries:
 
 | Tool | Best For | Cost |
 |------|----------|------|
-| **Midjourney** | Highest quality, strong aesthetic control | $10–30/month |
-| **DALL-E 3** (via ChatGPT Plus) | Good quality, easy to use | Included with ChatGPT Plus |
-| **Leonardo AI** | Free tier available, good for iteration | Free–$12/month |
-| **Stable Diffusion** (local) | Maximum control, no ongoing cost | Free (requires GPU) |
-| **Canva** | Adding text, layout, final composition | Free–$13/month |
+| **Nano Banana** (Google) | Studio-quality images, photorealism, free tier | Free-$50/month (via Google AI plans) |
+| **Midjourney** (V7) | Strong aesthetic control, artistic styles | $10-30/month |
+| **Flux 2 Pro** (Black Forest Labs) | Most photorealistic output, fast generation | ~$0.03/image (API, no subscription required) |
+| **Ideogram 3.0** | Best text rendering in images (logos, typography) | Free-$20/month |
+| **GPT Image** (via ChatGPT Plus) | Convenient if you already use ChatGPT | Included with ChatGPT Plus |
+| **Leonardo AI** | Free tier, good for iteration | Free-$12/month |
+| **Stable Diffusion 3.5** (local) | Maximum control, no ongoing cost | Free (requires GPU) |
+| **Canva** | Adding text, layout, final composition | Free-$13/month |
+
+**Recommendation for album art:** Start with Nano Banana (free tier gives you 3 low-res generations to test concepts) or Flux (pay-per-image, no subscription commitment). Move to Midjourney if you want the most control over artistic style. Use Ideogram if your album art needs legible text - it is the most reliable for typography. Add text overlays in Canva regardless of which generator you use.
 
 ### What You Need
 
@@ -485,7 +527,7 @@ oil painting style, cinematic lighting, album cover format
 - **Use consistent style descriptors** across all images (album art, promo, profile).
 - **Maintain a color palette.** Pick 3–4 colors and reference them in every prompt.
 - **Iterate like you do with music.** Generate 10+ versions. Choose the one that captures the album's emotional territory.
-- **Add text in Canva or Photoshop**, not in the AI tool. AI-generated text is unreliable.
+- **Add text in Canva or Photoshop** for most generators. Ideogram 3.0 is the exception - it renders text reliably and can be used for typography-heavy designs. For everything else, overlay text manually.
 
 ### Album Art Specifications
 
@@ -511,10 +553,10 @@ If you want radio-competitive quality, submit to playlists, or take the project 
 | DAW | Cost | Platform | Best For |
 |-----|------|----------|----------|
 | **GarageBand** | Free | Mac/iOS | Beginners, basic mixing |
-| **Reaper** | $60 (personal) | Mac/Win/Linux | Full-featured, affordable |
-| **Logic Pro** | $200 (one-time) | Mac | Professional production |
-| **Ableton Live** | $99–749 | Mac/Win | Electronic, creative workflows |
-| **BandLab** | Free | Web/Mobile | Collaboration, accessibility |
+| **BandLab** | Free | Web/Mobile | Free full-featured DAW, AI tools (stem splitter, auto-pitch, voice cleaner), real-time collaboration |
+| **Reaper** | $60 (personal) | Mac/Win/Linux | Full-featured, affordable, highly customizable |
+| **Logic Pro 12** | $200 (one-time) | Mac | Professional production, AI Session Players, Chord ID for analyzing audio |
+| **Ableton Live 12** | $99-749 | Mac/Win | Electronic, creative workflows, MIDI transformation tools |
 
 ### Basic Post-Production Workflow
 
@@ -528,9 +570,10 @@ If you want radio-competitive quality, submit to playlists, or take the project 
 ### AI Mastering Services
 
 If you do not want to learn mastering:
-- **LANDR** - $4–14/track, AI-powered, good enough for streaming
-- **eMastered** - $9/month unlimited, simple interface
-- **CloudBounce** - Free tier available, AI mastering
+- **LANDR** - $10/track or $13-25/month unlimited, AI-powered, also offers distribution (artists keep 100% of royalties)
+- **eMastered** - $13-19/month unlimited, developed by Grammy-winning engineers, reference track matching
+- **CloudBounce** - $10/track or $20/month unlimited, 15+ genre presets, most affordable subscription option
+- **RoEx** - AI mixing and mastering combined, goes beyond mastering to optimize the full mix
 
 ### Music Production Learning Resources
 
@@ -567,9 +610,15 @@ If you do not want to learn mastering:
 5. **Set release date.** Allow 2–4 weeks for platform processing. You can set a future date for coordinated release.
 6. **Submit.** DistroKid handles delivery to all selected platforms.
 
-### Important: Verify Commercial Rights
+### Important: Commercial Rights and AI Disclosure
 
-Ensure your tracks were generated on a Suno plan that includes commercial licensing (Pro or Premier). This is not retroactive - upgrading later does not convert earlier free-tier tracks to commercial use.
+**Verify your Suno plan.** Ensure your tracks were generated on a plan that includes commercial licensing (Pro or Premier). This is not retroactive - upgrading later does not convert earlier free-tier tracks to commercial use.
+
+**Understand the licensing distinction.** Following Suno's 2025 deal with Warner Music Group, the terms of service distinguish between commercial use rights and ownership. You are granted a **commercial license** to reproduce, sell, and distribute the music. You are not considered the legal owner of the generated audio. Your original lyrics remain your copyright. This distinction matters if you are licensing music for sync (film, TV, ads) - consult the current Suno terms of service.
+
+**AI disclosure is now required.** DistroKid and most distributors now include an AI disclosure checkbox during upload. You must indicate whether AI contributed to vocals, lyrics, melody, or instrumentation. Fill this out honestly. Spotify's updated policy (September 2025) requires AI-generated content to be labeled and prohibits AI vocal impersonation of real artists without their explicit permission.
+
+**Platform policies are evolving.** Even if DistroKid accepts your upload, individual platforms (Spotify, Apple Music) may have additional requirements. Spotify has removed over 75 million tracks flagged as AI spam. The distinction they draw is between genuine creative work using AI tools (allowed) and automated noise generation (not allowed). If you are bringing real creative vision and original lyrics, you are on the right side of that line.
 
 ### Metadata Checklist
 
@@ -685,7 +734,7 @@ Ask each agent what they want the production to sound like. Synthesize their (co
 |------|------------|----------|------------------------|
 | **Songwriter** | Lyric craft, structure, emotional arc | LLM for brainstorming, rhyme, revision | Vision, meaning, authenticity |
 | **Producer** | Style prompting, arrangement direction | Suno for generation, DAW for post | Taste, iteration, quality control |
-| **Visual Director** | Aesthetic vision, brand consistency | Midjourney/DALL-E for art generation | Brand coherence, emotional alignment |
+| **Visual Director** | Aesthetic vision, brand consistency | Nano Banana/Midjourney/Flux for art generation | Brand coherence, emotional alignment |
 | **Band Manager** (you) | Project management, sequencing, release strategy | All of the above | Creative direction, final decisions |
 | **A&R** | Song selection, album pacing | LLM for feedback and analysis | Knowing what to cut |
 
@@ -697,36 +746,36 @@ Ask each agent what they want the production to sound like. Synthesize their (co
 
 | Item | Cost |
 |------|------|
-| Suno Pro (1–2 months) | $10–20 |
+| Suno Pro (1 month) | $10 |
 | DistroKid (annual) | $22.99 |
-| Album art (DALL-E via ChatGPT Plus) | $20 (1 month) |
-| Post-production (GarageBand) | Free |
-| **Total** | **~$53–63** |
+| Album art (Nano Banana free tier + Canva) | Free |
+| Post-production (GarageBand or BandLab) | Free |
+| **Total** | **~$33** |
 
 ### Recommended Setup
 
 | Item | Cost |
 |------|------|
-| Suno Premier (2 months) | $60 |
+| Suno Premier (1-2 months) | $30-60 |
 | DistroKid (annual) | $22.99 |
-| Midjourney (1 month) | $10–30 |
+| Midjourney or Flux (album art) | $10-30 |
 | ChatGPT Plus or Claude Pro (for songwriting) | $20 |
-| AI mastering (LANDR, ~10 tracks) | $40–140 |
-| **Total** | **~$153–273** |
+| AI mastering (CloudBounce or LANDR, ~10 tracks) | $20-100 |
+| **Total** | **~$103-233** |
 
 ### Professional Setup
 
 | Item | Cost |
 |------|------|
-| Suno Premier (3 months) | $90 |
+| Suno Premier (2-3 months) | $60-90 |
 | DistroKid (annual) | $22.99 |
-| Midjourney (2 months) | $20–60 |
+| Midjourney (2 months) | $20-60 |
 | Claude Pro (for songwriting and agents) | $20 |
-| Logic Pro or Reaper | $60–200 |
-| Professional mastering | $200–500 |
-| **Total** | **~$413–893** |
+| Logic Pro 12 or Reaper | $60-200 |
+| Professional mastering | $200-500 |
+| **Total** | **~$383-893** |
 
-For context: recording a 10-track album in a traditional studio costs $5,000–50,000+.
+For context: recording a 10-track album in a traditional studio costs $5,000-50,000+.
 
 ---
 
@@ -755,7 +804,9 @@ For context: recording a 10-track album in a traditional studio costs $5,000–5
 
 | Resource | Type | What You Will Learn |
 |----------|------|-------------------|
-| Midjourney documentation | Reference | Prompting techniques, parameters |
+| Midjourney documentation | Reference | Prompting techniques, parameters, V7 features |
+| Nano Banana / Google AI documentation | Reference | Prompting, resolution tiers, API usage |
+| Flux documentation (Black Forest Labs) | Reference | Photorealistic generation, multi-reference workflows |
 | Tokenized (YouTube) | Tutorials | AI art prompting, style consistency |
 | Future Tools newsletter | Curation | Latest AI image generation tools and techniques |
 
@@ -783,13 +834,13 @@ For context: recording a 10-track album in a traditional studio costs $5,000–5
 No. Music theory helps you understand why things sound good, but taste and iteration are more important for this process. You need to know when something sounds right, not why.
 
 **Can I really release AI-generated music on Spotify?**
-Yes. Suno Pro and Premier plans include commercial rights. Major distributors accept AI-generated music. Your responsibilities: accurate metadata, original lyrics (if you wrote them), and honest representation.
+Yes. Suno Pro and Premier plans include commercial use rights. Major distributors accept AI-generated music. As of late 2025, distributors require AI disclosure during upload, and Spotify labels AI-generated content. Your responsibilities: accurate metadata, original lyrics (if you wrote them), honest AI disclosure, and no vocal impersonation of real artists. Spotify distinguishes between genuine creative work using AI tools (allowed) and automated spam (not allowed).
 
 **How many Suno credits does an album take?**
-Budget 50–100 credits per finished song (including iterations and rejected generations). A 10-track album typically takes 500–1,000 credits. The Premier plan (10,000 credits/month) is comfortable for album production.
+Budget 50-100 credits per finished song (including iterations and rejected generations). A 10-track album typically takes 500-1,000 credits. The Premier plan (10,000 credits/month) is comfortable for album production. With V5's Personas and Replace Section features, you may need fewer iterations than earlier versions.
 
 **Should I tell people the music is AI-generated?**
-That is your call. Southern Oracle is transparent about its process. Transparency tends to generate curiosity rather than backlash, especially when you are clearly bringing creative vision and authorship to the project.
+Distributors now require AI disclosure, so the question is less "should you" and more "how prominently." Southern Oracle is transparent about its process. Transparency tends to generate curiosity rather than backlash, especially when you are clearly bringing creative vision and authorship to the project.
 
 **Can I use this process for genres other than country?**
 Absolutely. The framework is genre-agnostic. Substitute your genre neighborhood, instrumentation, and vocal character. The process - concept, songwriting, production, art, distribution - is the same regardless of genre.
@@ -798,10 +849,10 @@ Absolutely. The framework is genre-agnostic. Substitute your genre neighborhood,
 Iterate on the vocal character descriptors in your style prompt. Small changes matter: "raspy" vs. "gravelly," "understated" vs. "intimate." If one voice is not working, try different register and texture combinations. Generate 4–6 versions and pick the closest match.
 
 **Can I use my own voice?**
-Suno does not currently support custom voice models in the standard product. However, you can record vocals separately and layer them over Suno instrumentals using a DAW. Some creators use Suno for backing tracks and instrumentals only.
+Not directly in Suno's generation pipeline. However, you can record your own vocals and layer them over Suno instrumentals using a DAW. Export Suno's stems (available on Pro and Premier), mute the vocal stem, and add your own. Some creators use Suno exclusively for backing tracks and instrumentals. BandLab's free AI voice tools (AutoPitch, Voice Cleaner) can help polish self-recorded vocals.
 
 **How do I handle copyright and ownership?**
-On Suno Pro or Premier, you own commercial rights to generated outputs. Your original lyrics are your copyright. Album art generated by AI tools follows each tool's commercial use policy (check Midjourney, DALL-E, etc.). When in doubt, read the terms of service for each tool.
+On Suno Pro or Premier, you are granted commercial use rights to generated outputs. Note that following Suno's 2025 deal with Warner Music Group, the terms distinguish between a commercial license (what you get) and ownership (which Suno retains over the generated audio). Your original lyrics are your copyright. Album art generated by AI tools follows each tool's commercial use policy. When in doubt, read the current terms of service for each tool - these are evolving rapidly.
 
 ---
 
